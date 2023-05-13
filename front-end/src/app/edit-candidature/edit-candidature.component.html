@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <input
+        type="text"
+        value="XYZ Inc."
+        id="company-input"
+        class="header-input"
+      />
+    </div>
+
+    <div class="card-body">
+      <p>
+        <span class="label">Poste : </span>
+        <span class="value"
+          ><input type="text" value="Développeur Full Stack"
+        /></span>
+      </p>
+      <p>
+        <span class="label">Date de candidature : </span>
+        <span class="value"><input type="text" value="10 mai 2023" /></span>
+      </p>
+      <p>
+        <span class="label">État de candidature : </span>
+        <span class="value"><input type="text" value="En attente" /></span>
+      </p>
+      <p>
+        <span class="label">Lien vers l'offre </span>
+        <span class="value"
+          ><input type="text" value="https://www.xyzinc.com/offres/123456"
+        /></span>
+      </p>
+      <p>
+        <span class="label">Lieu : </span>
+        <span class="value"
+          ><input type="text" value="Montréal, Québec"
+        /></span>
+      </p>
+      <p>
+        <span class="label">Durée :</span>
+        <span class="value"><input type="text" value="Temps plein" /></span>
+      </p>
+      <p>
+        <span class="label">Date de début :</span>
+        <span class="value"
+          ><input type="text" value="1er juillet 2023"
+        /></span>
+      </p>
+      <p>
+        <span class="label">Commentaire :</span>
+        <span class="value">
+          <textarea>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea
+          >
+        </span>
+      </p>
+    </div>
+    <div class="card-footer">
+      <a (click)="saveCandidature()" class="btn btn-success">Sauvegarder</a>
+      <a (click)="deleteCandidature()" class="btn btn-danger">Supprimer</a>
+      <a (click)="cancelCandidature()" class="btn btn-warning">Annuler</a>
+    </div>
+  </div>
+</div>
