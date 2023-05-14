@@ -21,7 +21,23 @@ export class EditCandidatureComponent implements OnInit {
     this.route.paramMap.subscribe((params) => {
       this.id = params.get('id');
     });
-    this.getCandidature();
+    if (this.id != 'add') {
+      this.getCandidature();
+    } else {
+      this.candidature = {
+        id: '',
+        entreprise: '',
+        poste: '',
+        date_postulation: '',
+        etat_candidature: '',
+        lien_offre: '',
+        lieu: '',
+        duree: 0,
+        date_debut: '',
+        commentaire: '',
+      };
+      this.id = null;
+    }
   }
 
   private getCandidature() {
@@ -33,15 +49,34 @@ export class EditCandidatureComponent implements OnInit {
   }
 
   saveCandidature(id: string) {
-    this.candidatureService.updateCandidature(this.candidature).subscribe(
-      // (response) => console.log(response),
-      (error) => console.log(error)
-    );
-    this.router.navigate(['/candidature', id]);
+    if (this.id) {
+      console.log('inside if save');
+      console.log(id);
+      this.candidatureService.updateCandidature(this.candidature).subscribe(
+        (response) => {
+          console.log(response), this.router.navigate(['/candidature', id]);
+        },
+        (error) => console.log(error)
+      );
+    } else {
+      console.log('inside else save');
+      this.candidatureService.createCandidature(this.candidature).subscribe(
+        (response) => {
+          console.log(response);
+          this.router.navigate(['/candidature', response.id]);
+        },
+        (error) => console.log(error)
+      );
+    }
   }
 
   cancelCandidature(id: string) {
-    this.router.navigate(['/candidature', id]);
+    if (id) {
+      this.id = null;
+      this.router.navigate(['/candidature', id]);
+    } else {
+      this.router.navigate(['liste-candidatures']);
+    }
   }
 
   deleteCandidature() {
@@ -52,6 +87,7 @@ export class EditCandidatureComponent implements OnInit {
           this.candidature = data;
         });
     }
+    this.id = null;
     this.router.navigate(['/liste-candidatures']);
   }
 }

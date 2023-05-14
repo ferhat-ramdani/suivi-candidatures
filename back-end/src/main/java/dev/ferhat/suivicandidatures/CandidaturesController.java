@@ -16,7 +16,7 @@ public class CandidaturesController {
     private CandidaturesService service;
     @GetMapping
     public ResponseEntity<List<Candidature>> getCandidatures() {
-        return new ResponseEntity<List<Candidature>>(service.findAllMovies(), HttpStatus.OK);
+        return new ResponseEntity<List<Candidature>>(service.findAllCandidatures(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
@@ -35,4 +35,12 @@ public class CandidaturesController {
         Candidature candidature = service.updateCandidature(id, updatedCandidature);
         return ResponseEntity.ok(candidature);
     }
+
+    @PostMapping("/")
+    public ResponseEntity<Candidature> createCandidature(@RequestBody Candidature candidature) {
+        System.out.println("just got into post");
+        Candidature newCandidature = service.createCandidature(candidature);
+        return ResponseEntity.status(HttpStatus.CREATED).body(newCandidature);
+    }
+
 }

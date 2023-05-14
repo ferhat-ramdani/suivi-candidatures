@@ -5,12 +5,13 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @Service
 public class CandidaturesService {
     @Autowired
     private CandidaturesRepository repository;
-    public List<Candidature> findAllMovies() {
+    public List<Candidature> findAllCandidatures() {
         return repository.findAll();
     }
 
@@ -40,4 +41,11 @@ public class CandidaturesService {
 
         return repository.save(candidature);
     }
+
+    public Candidature createCandidature(Candidature candidature) {
+        System.out.println("just got into create !");
+        candidature.setId(UUID.randomUUID().toString());
+        return repository.save(candidature);
+    }
+
 }

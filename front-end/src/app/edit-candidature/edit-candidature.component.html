@@ -43,8 +43,16 @@
       <p>
         <span class="label">Durée :</span>
         <span class="value"
-          ><input type="text" [(ngModel)]="candidature.duree"
-        /></span>
+          ><input
+            type="number"
+            [(ngModel)]="candidature.duree"
+            inputmode="numeric"
+            pattern="[6-9]|[1-2][0-9]|3[0-6]"
+            min="6"
+            max="36"
+            required
+          />
+        </span>
       </p>
       <p>
         <span class="label">Date de début :</span>
@@ -65,7 +73,12 @@
       <a (click)="saveCandidature(candidature.id)" class="btn btn-success"
         >Sauvegarder</a
       >
-      <a (click)="deleteCandidature()" class="btn btn-danger">Supprimer</a>
+      <a
+        *ngIf="candidature.id"
+        (click)="deleteCandidature()"
+        class="btn btn-danger"
+        >Supprimer</a
+      >
       <a (click)="cancelCandidature(candidature.id)" class="btn btn-warning"
         >Annuler</a
       >

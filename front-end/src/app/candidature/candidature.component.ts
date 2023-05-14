@@ -33,6 +33,7 @@ export class CandidatureComponent implements OnInit {
   }
 
   goToListeCandidatures() {
+    this.id = null;
     this.router.navigate(['/liste-candidatures']);
   }
 

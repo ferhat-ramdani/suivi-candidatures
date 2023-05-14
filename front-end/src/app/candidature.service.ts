@@ -26,4 +26,10 @@ export class CandidatureService {
     const url = `${this.baseURL}/${data.id}`;
     return this.httpClient.put<Candidature>(url, data);
   }
+
+  createCandidature(candidature: Candidature) {
+    console.log('just got into create');
+    const url = `${this.baseURL}/`;
+    return this.httpClient.post<Candidature>(url, candidature);
+  }
 }
