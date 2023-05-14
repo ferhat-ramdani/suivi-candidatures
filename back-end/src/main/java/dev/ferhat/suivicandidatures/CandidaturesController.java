@@ -14,8 +14,6 @@ import java.util.Optional;
 public class CandidaturesController {
     @Autowired
     private CandidaturesService service;
-    @Autowired
-    private CandidaturesRepository repository;
     @GetMapping
     public ResponseEntity<List<Candidature>> getCandidatures() {
         return new ResponseEntity<List<Candidature>>(service.findAllMovies(), HttpStatus.OK);
