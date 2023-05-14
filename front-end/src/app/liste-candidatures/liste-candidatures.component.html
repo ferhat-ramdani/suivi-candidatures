@@ -1,23 +1,12 @@
 <div class="container-fluid">
-  <div class="box" (click)="goToCandidature()">
-    <h2>Alten</h2>
-    <p>Ingénieur Développement Logiciel</p>
-    <p>22/04/2023</p>
-  </div>
-  <div class="box" (click)="goToCandidature()">
-    <h2>Okayo</h2>
-    <p>Développeur Full-Stack</p>
-    <p>14/04/2023</p>
-  </div>
-  <div class="box" (click)="goToCandidature()">
-    <h2>BNP paris bas</h2>
-    <p>Développement Full-Stack - Java/Angular</p>
-    <p>09/05/2023</p>
-  </div>
-  <div class="box" (click)="goToCandidature()">
-    <h2>Dassault System</h2>
-    <p>Ingénieur Logiciel Booléen</p>
-    <p>05/05/2023</p>
+  <div
+    *ngFor="let candidature of candidatures"
+    class="box"
+    (click)="goToCandidature(candidature.id)"
+  >
+    <h2>{{ candidature.entreprise }}</h2>
+    <p>{{ candidature.poste }}</p>
+    <p>{{ candidature.date_postulation }}</p>
   </div>
   <div class="box plus" (click)="addCandidature()">
     <span>+</span>

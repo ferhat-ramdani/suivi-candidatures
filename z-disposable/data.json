@@ -1,0 +1,123 @@
+[
+  {
+    "entreprise": "Walmart",
+    "poste": "Analyste financier",
+    "date_postulation": "2022-06-20",
+    "état_candidature": "En attente",
+    "lien_offre": "https://www.walmart.com/careers/",
+    "lieu": "Toulouse",
+    "durée": 12,
+    "date_debut": "2023-01-02",
+    "commentaire": "J'ai été impressionné par l'entreprise lors de l'entretien."
+  },
+  {
+    "entreprise": "Apple",
+    "poste": "Développeur iOS",
+    "date_postulation": "2022-07-05",
+    "état_candidature": "Entretien passé",
+    "lien_offre": "https://www.apple.com/jobs/fr/",
+    "lieu": "Lyon",
+    "durée": 6,
+    "date_debut": "2023-02-01",
+    "commentaire": "L'entretien s'est très bien passé et j'attends maintenant une réponse."
+  },
+  {
+    "entreprise": "Facebook",
+    "poste": "Ingénieur logiciel",
+    "date_postulation": "2022-08-01",
+    "état_candidature": "Refusé",
+    "lien_offre": "https://www.facebook.com/careers/",
+    "lieu": "Paris",
+    "durée": 9,
+    "date_debut": "2023-03-01",
+    "commentaire": "J'ai été déçu de ne pas avoir été retenu, mais je vais continuer à chercher."
+  },
+  {
+    "entreprise": "Tesla",
+    "poste": "Ingénieur électricien",
+    "date_postulation": "2022-09-01",
+    "état_candidature": "En attente",
+    "lien_offre": "https://www.tesla.com/careers",
+    "lieu": "Nantes",
+    "durée": 12,
+    "date_debut": "2023-04-01",
+    "commentaire": "J'ai hâte de travailler avec une entreprise aussi innovante."
+  },
+  {
+    "entreprise": "Amazon",
+    "poste": "Développeur web",
+    "date_postulation": "2022-10-01",
+    "état_candidature": "Entretien prévu",
+    "lien_offre": "https://www.amazon.jobs/fr/jobs/1625546/web-developer",
+    "lieu": "Montpellier",
+    "durée": 6,
+    "date_debut": "2023-05-01",
+    "commentaire": "Je suis excité à l'idée de discuter de mes compétences avec l'équipe de recrutement."
+  },
+  {
+    "entreprise": "Microsoft",
+    "poste": "Ingénieur Cloud",
+    "date_postulation": "2022-11-01",
+    "état_candidature": "En attente",
+    "lien_offre": "https://careers.microsoft.com/fr-fr/job/1234567/Cloud-Engineer",
+    "lieu": "Lille",
+    "durée": 12,
+    "date_debut": "2023-06-01",
+    "commentaire": "J'espère avoir bientôt des nouvelles."
+  },
+  {
+    "entreprise": "Netflix",
+    "poste": "Designer UX",
+    "date_postulation": "2022-12-01",
+    "état_candidature": "En attente",
+    "lien_offre": "https://jobs.netflix.com/jobs/1652597",
+    "lieu": "Bordeaux",
+    "durée": 9,
+    "date_debut": "2023-07-01",
+    "commentaire": "J'espère vraiment obtenir cette opportunité."
+  },
+  {
+    "entreprise": "Google",
+    "poste": "Ingénieur sécurité",
+    "date_postulation": "2023-01-01",
+    "état_candidature": "Refusé",
+    "lien_offre": "https://careers.google.com/jobs/results/",
+    "lieu": "Nice",
+    "durée": 12,
+    "date_debut": "2023-08-01",
+    "commentaire": "C'est décevant mais je suis reconnaissant d'avoir eu l'occasion de postuler."
+  },
+  {
+    "entreprise": "Airbnb",
+    "poste": "Développeur back-end",
+    "date_postulation": "2023-02-01",
+    "état_candidature": "En attente",
+    "lien_offre": "https://careers.airbnb.com/positions/",
+    "lieu": "Strasbourg",
+    "durée": 6,
+    "date_debut": "2023-09-01",
+    "commentaire": "J'ai vraiment envie de travailler pour cette entreprise."
+  },
+  {
+    "entreprise": "Uber",
+    "poste": "Analyste de données",
+    "date_postulation": "2023-03-01",
+    "état_candidature": "Entretien prévu",
+    "lien_offre": "https://www.uber.com/fr/fr/careers/list/",
+    "lieu": "Marseille",
+    "durée": 12,
+    "date_debut": "2024-01-01",
+    "commentaire": "Je me prépare pour l'entretien."
+  },
+  {
+    "entreprise": "Intel",
+    "poste": "Ingénieur en intelligence artificielle",
+    "date_postulation": "2023-04-01",
+    "état_candidature": "En attente",
+    "lien_offre": "https://jobs.intel.com/page/show/",
+    "lieu": "Rennes",
+    "durée": 9,
+    "date_debut": "2023-11-01",
+    "commentaire": "Je suis impatient de connaître le résultat de ma candidature."
+  }
+]

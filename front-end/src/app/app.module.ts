@@ -6,19 +6,18 @@ import { AppComponent } from './app.component';
 import { ListeCandidaturesComponent } from './liste-candidatures/liste-candidatures.component';
 import { CandidatureComponent } from './candidature/candidature.component';
 import { EditCandidatureComponent } from './edit-candidature/edit-candidature.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListeCandidaturesComponent,
     CandidatureComponent,
-    EditCandidatureComponent
+    EditCandidatureComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

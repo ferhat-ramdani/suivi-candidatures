@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container" *ngIf="candidature">
   <div class="card">
     <div class="card-header">
       <input
         type="text"
-        value="XYZ Inc."
+        [(ngModel)]="candidature.entreprise"
         id="company-input"
         class="header-input"
       />
@@ -13,52 +13,62 @@
       <p>
         <span class="label">Poste : </span>
         <span class="value"
-          ><input type="text" value="Développeur Full Stack"
+          ><input type="text" [(ngModel)]="candidature.poste"
         /></span>
       </p>
       <p>
         <span class="label">Date de candidature : </span>
-        <span class="value"><input type="text" value="10 mai 2023" /></span>
+        <span class="value"
+          ><input type="text" [(ngModel)]="candidature.date_postulation"
+        /></span>
       </p>
       <p>
         <span class="label">État de candidature : </span>
-        <span class="value"><input type="text" value="En attente" /></span>
+        <span class="value"
+          ><input type="text" [(ngModel)]="candidature.etat_candidature"
+        /></span>
       </p>
       <p>
         <span class="label">Lien vers l'offre </span>
         <span class="value"
-          ><input type="text" value="https://www.xyzinc.com/offres/123456"
+          ><input type="text" [(ngModel)]="candidature.lien_offre"
         /></span>
       </p>
       <p>
         <span class="label">Lieu : </span>
         <span class="value"
-          ><input type="text" value="Montréal, Québec"
+          ><input type="text" [(ngModel)]="candidature.lieu"
         /></span>
       </p>
       <p>
         <span class="label">Durée :</span>
-        <span class="value"><input type="text" value="Temps plein" /></span>
+        <span class="value"
+          ><input type="text" [(ngModel)]="candidature.duree"
+        /></span>
       </p>
       <p>
         <span class="label">Date de début :</span>
         <span class="value"
-          ><input type="text" value="1er juillet 2023"
+          ><input type="text" [value]="candidature.date_debut"
         /></span>
       </p>
       <p>
         <span class="label">Commentaire :</span>
         <span class="value">
-          <textarea>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea
-          >
+          <textarea [(ngModel)]="candidature.commentaire">{{
+            candidature.commentaire
+          }}</textarea>
         </span>
       </p>
     </div>
     <div class="card-footer">
-      <a (click)="saveCandidature()" class="btn btn-success">Sauvegarder</a>
+      <a (click)="saveCandidature(candidature.id)" class="btn btn-success"
+        >Sauvegarder</a
+      >
       <a (click)="deleteCandidature()" class="btn btn-danger">Supprimer</a>
-      <a (click)="cancelCandidature()" class="btn btn-warning">Annuler</a>
+      <a (click)="cancelCandidature(candidature.id)" class="btn btn-warning"
+        >Annuler</a
+      >
     </div>
   </div>
 </div>

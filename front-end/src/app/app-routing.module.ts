@@ -6,8 +6,9 @@ import { EditCandidatureComponent } from './edit-candidature/edit-candidature.co
 
 const routes: Routes = [
   { path: 'liste-candidatures', component: ListeCandidaturesComponent },
-  { path: 'candidature', component: CandidatureComponent },
-  { path: 'edit-candidature', component: EditCandidatureComponent },
+  { path: 'candidature/:id', component: CandidatureComponent },
+  { path: 'edit-candidature/:id', component: EditCandidatureComponent },
+  { path: 'edit-candidature/add', component: EditCandidatureComponent },
   { path: '', redirectTo: 'liste-candidatures', pathMatch: 'full' },
 ];
 
