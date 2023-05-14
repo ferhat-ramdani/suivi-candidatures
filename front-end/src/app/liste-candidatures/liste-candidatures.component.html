@@ -6,7 +6,9 @@
   >
     <h2>{{ candidature.entreprise }}</h2>
     <p>{{ candidature.poste }}</p>
-    <p>{{ candidature.date_postulation }}</p>
+    <p *ngIf="candidature.date_postulation">
+      {{ candidature.date_postulation }}
+    </p>
   </div>
   <div class="box plus" (click)="addCandidature()">
     <span>+</span>

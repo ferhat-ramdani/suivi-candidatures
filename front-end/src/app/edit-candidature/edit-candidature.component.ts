@@ -50,8 +50,6 @@ export class EditCandidatureComponent implements OnInit {
 
   saveCandidature(id: string) {
     if (this.id) {
-      console.log('inside if save');
-      console.log(id);
       this.candidatureService.updateCandidature(this.candidature).subscribe(
         (response) => {
           console.log(response), this.router.navigate(['/candidature', id]);
@@ -59,7 +57,6 @@ export class EditCandidatureComponent implements OnInit {
         (error) => console.log(error)
       );
     } else {
-      console.log('inside else save');
       this.candidatureService.createCandidature(this.candidature).subscribe(
         (response) => {
           console.log(response);

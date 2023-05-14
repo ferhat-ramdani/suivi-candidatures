@@ -40,17 +40,6 @@
 .card-body a {
   color: rgb(223, 255, 253);
 }
-.card-footer {
-  background-color: #37e8ff5e;
-  border-top: 1px solid #00fff286;
-  border-radius: 0 0 10px 10px;
-  padding: 20px;
-}
-.card-footer a {
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 10px;
-}
 .label {
   display: inline-block;
   width: 210px;
@@ -76,6 +65,15 @@
   background-color: transparent;
   border: 1px solid white;
   width: 665px;
-  height: 150px;
+  height: 100px;
   resize: vertical;
+}
+.card-footer {
+  border: none;
+  background-color: transparent;
+}
+.card-footer a {
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
 }

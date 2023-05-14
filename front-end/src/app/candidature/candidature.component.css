@@ -29,23 +29,21 @@
 .card-body a {
   color: rgb(223, 255, 253);
 }
+.card-body p .label {
+  display: inline-block;
+  width: 230px;
+  font-weight: bold;
+}
+.card-body p .value {
+  display: inline-block;
+  color: rgb(223, 255, 253);
+}
 .card-footer {
-  background-color: #37e8ff5e;
-  border-top: 1px solid #00fff286;
-  border-radius: 0 0 10px 10px;
-  padding: 20px;
+  border: none;
+  background-color: transparent;
 }
 .card-footer a {
   font-weight: bold;
   text-decoration: none;
-  margin-left: 10px;
-}
-.card-body p .label {
-  display: inline-block;
-  width: 210px;
-  font-weight: bold;
-}
-.card-body p .value {
-  /* display: inline-block; */
-  color: rgb(223, 255, 253);
+  margin-right: 10px;
 }

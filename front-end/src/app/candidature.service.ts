@@ -28,7 +28,6 @@ export class CandidatureService {
   }
 
   createCandidature(candidature: Candidature) {
-    console.log('just got into create');
     const url = `${this.baseURL}/`;
     return this.httpClient.post<Candidature>(url, candidature);
   }
