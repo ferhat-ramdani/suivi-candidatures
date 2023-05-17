@@ -24,7 +24,7 @@ Le projet utilise les technologies suivantes :
 Pour exécuter l'application localement, suivez ces étapes :
 
 1. Assurez-vous d'avoir installé MongoDB, Spring Boot et Angular sur votre machine.
-2. Clonez ce dépôt GitHub : `git clone <lien du dépôt>`.
+2. Clonez ce dépôt GitHub : `git clone https://github.com/ferhat-ramdani/suivi-candidatures.git`.
 3. Accédez au répertoire backend : `cd back-end`.
 4. Configurez la base de données MongoDB dans le fichier `exemple.env`, n'oubliez pas de renommer le fichier `.env`.
 5. Lancez le serveur Spring Boot : `mvn spring-boot:run`.
