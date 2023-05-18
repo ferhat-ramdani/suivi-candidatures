@@ -35,4 +35,5 @@ Pour exécuter l'application localement, suivez ces étapes :
 
 
 ## Auteurs
-- RAMDANI Ferhat
+
+- RAMDANI Ferhat ([@Ferhat](https://github.com/ferhat-ramdani))
